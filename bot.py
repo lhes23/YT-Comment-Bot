@@ -13,14 +13,12 @@ from selenium.webdriver.common.by import By
 # running bot------------------------------------------------------------------------------------
 if __name__ == '__main__':
 
-    # driver = youtube_login(config.email, config.password)
-
-    driver = webdriver.Chrome(CM().install())
-
     while True:
-        youtube_login(config.email, config.password)
+        # driver = youtube_login(config.email, config.password)
+        
+        driver = webdriver.Chrome(CM().install())
         driver.get("https://youtube.com")
-        # key = driver.find_element_by_name('search_query')
+
         key = driver.find_element(By.NAME,'search_query')
 
         # get keyword list and extract each key
