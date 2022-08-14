@@ -14,10 +14,10 @@ from selenium.webdriver.common.by import By
 if __name__ == '__main__':
 
     while True:
-        # driver = youtube_login(config.email, config.password)
+        driver = youtube_login(config.email, config.password)
         
-        driver = webdriver.Chrome(CM().install())
-        driver.get("https://youtube.com")
+        # driver = webdriver.Chrome(CM().install())
+        # driver.get("https://youtube.com")
 
         key = driver.find_element(By.NAME,'search_query')
 
