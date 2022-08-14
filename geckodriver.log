@@ -1,0 +1,73 @@
+1660449288412	geckodriver	INFO	Listening on 127.0.0.1:49529
+1660449290389	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "49530" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5t/90c4yw654l146qwc55s2ngwh0000gn/T/rust_mozprofile3pOu58"
+1660449290977	Marionette	INFO	Marionette enabled
+1660449291097	Marionette	INFO	Listening on port 49539
+WebDriver BiDi listening on ws://localhost:49530
+Read port: 49539
+2022-08-14 11:54:51.222 plugin-container[39575:10403942] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 11:54:51.222 plugin-container[39575:10403942] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-14 11:54:51.230 plugin-container[39575:10403942] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 11:54:51.230 plugin-container[39575:10403942] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-14 11:54:51.231 plugin-container[39575:10403948] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 11:54:51.231 plugin-container[39575:10403948] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660449292096	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:49530/devtools/browser/d4644f36-dd44-4f4a-a909-98d0168469c8
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?dsh=S118209531%3A1660449294762447&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&ec=65620&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=en&passive=true&service=youtube&uilel=3&ifkv=AQN2RmUbxS6a2r29aSUjEyDecBGCRaluio1_p6PG9UIfT2Yd3lBMI2VUdUdXdshq18r5y2wgD8-xrg line 704 > injectedScript line 2 > eval line 3584 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+1660449612961	Marionette	INFO	Stopped listening on port 49539
+1660449934972	geckodriver	INFO	Listening on 127.0.0.1:49669
+1660449937347	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "49670" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5t/90c4yw654l146qwc55s2ngwh0000gn/T/rust_mozprofile0BlZ3B"
+1660449937800	Marionette	INFO	Marionette enabled
+1660449937934	Marionette	INFO	Listening on port 49677
+WebDriver BiDi listening on ws://localhost:49670
+Read port: 49677
+2022-08-14 12:05:38.000 plugin-container[39661:10410494] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 12:05:38.000 plugin-container[39661:10410494] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-14 12:05:38.008 plugin-container[39661:10410494] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 12:05:38.008 plugin-container[39661:10410494] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-14 12:05:38.009 plugin-container[39661:10410491] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 12:05:38.009 plugin-container[39661:10410491] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660449938851	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:49670/devtools/browser/2df19fcb-2431-452b-9ad6-5b3038ae7750
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin line 2 > eval line 1608 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin line 2 > eval line 4566 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+2022-08-14 04:05:43.982 plugin-container[39667:10410787] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 04:05:43.982 plugin-container[39667:10410787] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-14 04:05:43.987 plugin-container[39667:10410787] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 04:05:43.987 plugin-container[39667:10410787] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-14 04:05:43.988 plugin-container[39667:10410791] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 04:05:43.988 plugin-container[39667:10410791] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660454906537	Marionette	INFO	Stopped listening on port 49677
+1660455272353	geckodriver	INFO	Listening on 127.0.0.1:49892
+1660455274761	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "49893" "--remote-allow-hosts" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/5t/90c4yw654l146qwc55s2ngwh0000gn/T/rust_mozprofile6ReVhZ"
+1660455275204	Marionette	INFO	Marionette enabled
+1660455275348	Marionette	INFO	Listening on port 49900
+WebDriver BiDi listening on ws://localhost:49893
+Read port: 49900
+2022-08-14 13:34:35.566 plugin-container[39796:10425459] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 13:34:35.566 plugin-container[39796:10425459] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-14 13:34:35.841 plugin-container[39796:10425459] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 13:34:35.841 plugin-container[39796:10425459] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-14 13:34:35.841 plugin-container[39796:10425463] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 13:34:35.841 plugin-container[39796:10425463] nil host used in call to allowsAnyHTTPSCertificateForHost:
+1660455276439	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:49893/devtools/browser/1c337678-6a3e-4338-bc2f-8f2837194086
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin line 2 > eval line 6554 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin line 2 > eval line 7257 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+2022-08-14 05:34:42.037 plugin-container[39803:10425758] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 05:34:42.037 plugin-container[39803:10425758] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-14 05:34:42.046 plugin-container[39803:10425758] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 05:34:42.046 plugin-container[39803:10425758] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2022-08-14 05:34:42.046 plugin-container[39803:10425763] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2022-08-14 05:34:42.046 plugin-container[39803:10425763] nil host used in call to allowsAnyHTTPSCertificateForHost:
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F&hl=en&ec=65620&flowName=GlifWebSignIn&flowEntry=ServiceLogin line 2 > eval line 480 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1660455299861	Marionette	INFO	Stopped listening on port 49900

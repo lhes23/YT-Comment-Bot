@@ -6,15 +6,22 @@ import config
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from functions import *
+from webdriver_manager.chrome import ChromeDriverManager as CM
+from selenium.webdriver.common.by import By
 
 
 # running bot------------------------------------------------------------------------------------
 if __name__ == '__main__':
 
-    driver = youtube_login(config.email, config.password)
+    # driver = youtube_login(config.email, config.password)
+
+    driver = webdriver.Chrome(CM().install())
 
     while True:
-        key = driver.find_element_by_name('search_query')
+        youtube_login(config.email, config.password)
+        driver.get("https://youtube.com")
+        # key = driver.find_element_by_name('search_query')
+        key = driver.find_element(By.NAME,'search_query')
 
         # get keyword list and extract each key
         with open('keywords.txt', 'r') as f:
@@ -29,24 +36,22 @@ if __name__ == '__main__':
         time.sleep(1)
 
         # click search icon
-        driver.find_element_by_css_selector(
-            '#search-icon-legacy > yt-icon').click()
+        # driver.find_element_by_css_selector('#search-icon-legacy > yt-icon').click()
+        driver.find_element(By.CSS_SELECTOR,'#search-icon-legacy').click()
         time.sleep(3)
         # click filter button to filter the videos for the recently uploaded, you can remove or edit this option
-        driver.find_element_by_css_selector(
-            '#container > ytd-toggle-button-renderer > a').click()
+        driver.find_element(By.CSS_SELECTOR,'#container > ytd-toggle-button-renderer > a').click()
         time.sleep(3)
 
         # filtering for last hour
-        driver.find_element_by_xpath(
-            "(//yt-formatted-string[@class='style-scope ytd-search-filter-renderer'])[1]").click()
+        driver.find_element(By.XPATH,"(//yt-formatted-string[@class='style-scope ytd-search-filter-renderer'])[1]").click()
         time.sleep(3)
 
         # grabbing videos titles
         for i in range(2):
             ActionChains(driver).send_keys(Keys.END).perform()
             time.sleep(1)
-        titles = driver.find_elements_by_xpath('//*[@id="video-title"]')
+        titles = driver.find_elements(By.XPATH,'//*[@id="video-title"]')
 
         urls = []
 
