@@ -14,10 +14,10 @@ from selenium.webdriver.common.by import By
 if __name__ == '__main__':
 
     while True:
-        driver = youtube_login(config.email, config.password)
+        # driver = youtube_login(config.email, config.password)
         
-        # driver = webdriver.Chrome(CM().install())
-        # driver.get("https://youtube.com")
+        driver = webdriver.Chrome(CM().install())
+        driver.get("https://youtube.com")
 
         key = driver.find_element(By.NAME,'search_query')
 
@@ -31,11 +31,15 @@ if __name__ == '__main__':
             for char in keys:
                 key.send_keys(char)
 
-        time.sleep(1)
+        time.sleep(10)
+
+        # search_icon = driver.find_element(By.CSS_SELECTOR,'#search-icon-legacy > yt-icon')
+        # WebDriverWait(driver, 50).until(EC.presence_of_element_located(search_icon))
 
         # click search icon
         # driver.find_element_by_css_selector('#search-icon-legacy > yt-icon').click()
-        driver.find_element(By.CSS_SELECTOR,'#search-icon-legacy').click()
+        driver.find_element(By.CSS_SELECTOR,'#search-icon-legacy > yt-icon').click()
+        # search_icon.click()
         time.sleep(3)
         # click filter button to filter the videos for the recently uploaded, you can remove or edit this option
         driver.find_element(By.CSS_SELECTOR,'#container > ytd-toggle-button-renderer > a').click()
