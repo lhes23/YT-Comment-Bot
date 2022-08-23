@@ -18,35 +18,9 @@ from selenium.webdriver.common.action_chains import ActionChains
 import config
 
 
-ssl._create_default_https_context = ssl._create_unverified_context
-
-def stop(n):
-    time.sleep(randint(2, n))
-
-def gmail_login(driver,email,password):
-    ssl._create_default_https_context = ssl._create_unverified_context
-
-    # driver = uc.Chrome(use_subprocess=True,executable_path=CM().install())
-    # finding email field and putting our email on it
-    email_field = driver.find_element(By.XPATH,'//*[@id="identifierId"]')
-    email_field.send_keys(email)
-
-    driver.find_element(By.ID,"identifierNext").click()
-    stop(5)
-    print("email - done")
-
-    # finding pass field and putting our pass on it
-    find_pass_field = (By.XPATH, '//*[@id="password"]/div[1]/div/div[1]/input')
-    WebDriverWait(driver, 50).until(EC.presence_of_element_located(find_pass_field))
-    pass_field = driver.find_element(*find_pass_field)
-    WebDriverWait(driver, 50).until(EC.element_to_be_clickable(find_pass_field))
-    pass_field.send_keys(password)
-    driver.find_element(By.ID,"passwordNext").click()
-    stop(5)
-
 # login bot===================================================================================================
 def youtube_login(email, password):
-    # ssl._create_default_https_context = ssl._create_unverified_context
+    ssl._create_default_https_context = ssl._create_unverified_context
     op = webdriver.ChromeOptions()
     op.add_argument('--disable-dev-shm-usage')
     op.add_argument('--disable-gpu')
@@ -70,7 +44,8 @@ def youtube_login(email, password):
     email_field.send_keys(email)
 
     driver.find_element(By.ID,"identifierNext").click()
-    stop(5)
+    
+    time.sleep(randint(2,5))
     print("email - done")
 
     # finding pass field and putting our pass on it
@@ -80,7 +55,8 @@ def youtube_login(email, password):
     WebDriverWait(driver, 50).until(EC.element_to_be_clickable(find_pass_field))
     pass_field.send_keys(password)
     driver.find_element(By.ID,"passwordNext").click()
-    stop(5)
+
+    time.sleep(randint(2, 5))
     print("password - done")
 
     WebDriverWait(driver, 200).until(EC.presence_of_element_located((By.CSS_SELECTOR, "ytd-masthead button#avatar-btn")))
@@ -139,8 +115,6 @@ def comment_page(driver, urls, comment):
     
     ActionChains(driver).move_to_element(
         comment_box1).click(comment_box1).perform()
-
-    # gmail_login(driver,config.email,config.password)
     
     add_comment_onit = driver.find_element(By.CSS_SELECTOR,'#contenteditable-root')
     
@@ -148,7 +122,7 @@ def comment_page(driver, urls, comment):
     driver.find_element(By.CSS_SELECTOR,'#submit-button').click()
     print("done")
 
-    stop(5)
+    time.sleep(randint(2, 5))
 
     return comment_page(driver, urls, random_comment())
 # ==============================================================================================================

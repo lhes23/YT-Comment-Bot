@@ -13,11 +13,7 @@ from selenium.webdriver.common.by import By
 if __name__ == '__main__':
 
     while True:
-        #### 1st option
         driver = youtube_login(config.email, config.password)
-        
-        #### 2nd option
-        # driver = webdriver.Chrome(CM().install())
 
         key = driver.find_element(By.NAME,'search_query')
 
