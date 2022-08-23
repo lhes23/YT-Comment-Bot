@@ -18,10 +18,6 @@ if __name__ == '__main__':
         
         #### 2nd option
         # driver = webdriver.Chrome(CM().install())
-        
-        #### 3rd option
-        # driver = getDriver()
-        # driver.get("https://youtube.com")
 
         key = driver.find_element(By.NAME,'search_query')
 

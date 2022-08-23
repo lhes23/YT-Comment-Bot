@@ -20,19 +20,6 @@ import config
 
 ssl._create_default_https_context = ssl._create_unverified_context
 
-def getDriver():
-    ssl._create_default_https_context = ssl._create_unverified_context
-    op = webdriver.ChromeOptions()
-    op.add_argument('--disable-dev-shm-usage')
-    op.add_argument('--disable-gpu')
-    op.add_argument("--disable-infobars")
-    op.add_argument("--log-level=3")
-    op.add_argument("--disable-extensions")
-    op.add_argument("window-size=1200x600")
-    driver = uc.Chrome(use_subprocess=True,options=op, executable_path=CM().install())
-    driver.execute_script("document.body.style.zoom='80%'")
-    return driver
-
 def stop(n):
     time.sleep(randint(2, n))
 
