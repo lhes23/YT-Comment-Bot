@@ -41,22 +41,21 @@ if __name__ == '__main__':
         # WebDriverWait(driver, 50).until(EC.presence_of_element_located(search_icon))
 
         # click search icon
-        # driver.find_element_by_css_selector('#search-icon-legacy > yt-icon').click()
         driver.find_element(By.CSS_SELECTOR,'#search-icon-legacy > yt-icon').click()
-        # search_icon.click()
-        time.sleep(3)
-        # click filter button to filter the videos for the recently uploaded, you can remove or edit this option
-        driver.find_element(By.CSS_SELECTOR,'#container > ytd-toggle-button-renderer > a').click()
         time.sleep(3)
 
+        # click filter button to filter the videos for the recently uploaded, you can remove or edit this option
+        # driver.find_element(By.CSS_SELECTOR,'#container > ytd-toggle-button-renderer > a').click()
+        # time.sleep(3)
+
         # filtering for last hour
-        driver.find_element(By.XPATH,"(//yt-formatted-string[@class='style-scope ytd-search-filter-renderer'])[1]").click()
-        time.sleep(3)
+        # driver.find_element(By.XPATH,"(//yt-formatted-string[@class='style-scope ytd-search-filter-renderer'])[1]").click()
+        # time.sleep(3)
 
         # grabbing videos titles
         for i in range(2):
             ActionChains(driver).send_keys(Keys.END).perform()
-            time.sleep(1)
+            time.sleep(3)
         titles = driver.find_elements(By.XPATH,'//*[@id="video-title"]')
 
         urls = []
