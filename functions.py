@@ -153,7 +153,7 @@ def comment_page(driver, urls, comment):
     ActionChains(driver).move_to_element(
         comment_box1).click(comment_box1).perform()
 
-    gmail_login(driver,config.email,config.password)
+    # gmail_login(driver,config.email,config.password)
     
     add_comment_onit = driver.find_element(By.CSS_SELECTOR,'#contenteditable-root')
     
