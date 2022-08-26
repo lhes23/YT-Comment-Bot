@@ -12,7 +12,12 @@ from selenium.webdriver.common.by import By
 # running bot------------------------------------------------------------------------------------
 if __name__ == '__main__':
 
+    # To run the program for every gmail accounts
+    # for gmail,password in config.gmail_accounts.items():
+    #     print(gmail,password)
+
     while True:
+        
         driver = youtube_login(config.email, config.password)
 
         key = driver.find_element(By.NAME,'search_query')
