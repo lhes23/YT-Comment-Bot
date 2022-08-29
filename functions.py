@@ -93,7 +93,7 @@ def comment_page(driver, urls, comment):
     # WebDriverWait(driver, 50).until(EC.element_to_be_clickable(like_button)).click()
     # print('Liked')
     # time.sleep(1)
-    driver.execute_script("window.scrollTo(0, window.scrollY + 500)")
+    driver.execute_script("window.scrollTo(0, window.scrollY + 2700)")
     time.sleep(1)
 
     # checking if comments are disabled
